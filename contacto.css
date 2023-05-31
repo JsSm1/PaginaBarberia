@@ -1,0 +1,164 @@
+header {
+    background: linear-gradient(#888888 60%, #FEFEFE);
+    padding: 20px;
+}
+
+.cajaMenu {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.cajaMenu img {
+    margin-left: 50px;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    margin-right: 50px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 5px 3px 5px rgb(2, 5, 39);
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    box-shadow: 10px 10px 30px 10px black;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.input-padre {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 80%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 50%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(145, 34, 34);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgb(184, 6, 6);
+    transform: scale(1.2);
+}
+
+.envioFormulario {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+table {
+    width: 30%;
+    margin: 0 auto;
+}
+
+thead {
+    background: red;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+
+td {
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+footer {
+    margin-top: 15px;
+    padding: 0 30px 40px 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background: url(./img/bg.jpg);
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        text-align: center;
+        display: flex;
+    }
+
+    .cajaMenu {
+        width: auto;
+        padding: 20px;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    nav a {
+        color: #000000;
+    }
+
+    nav ul li {
+        justify-content: center;
+        display: flex;
+    }
+
+    form,
+    table {
+        margin: 15px;
+        width: auto;
+
+    }
+
+    form .envioFormulario input {
+        width: auto;
+    }
+
+
+}
